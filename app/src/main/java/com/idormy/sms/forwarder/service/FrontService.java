@@ -42,7 +42,6 @@ public class FrontService extends Service {
 
         Notification.Builder builder = new Notification.Builder(this);
         builder.setSmallIcon(R.drawable.ic_forwarder);
-        builder.setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher));
         if (OSUtil.isMIUI()) {
             builder.setContentTitle(getString(R.string.app_name));
         }
